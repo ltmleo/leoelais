@@ -1,43 +1,80 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css" />
     <title>Leo e Lais</title>
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link rel="stylesheet" href="css/cabecalho.css" />
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <style>
 
+    </style>
 </head>
 
 <body>
-    <header>
-        <div class="center">
-            <div class="logo"><img src="images/logo.png" alt="Logo" width="80" /></div>
-            <nav class="menu">
-                <a href="0">Home</a>
-                <a href="0">Nossa Historia</a>
-                <a href="0">Padrinhos</a>
-                <a href="0">Local</a>
-                <a href="0">Presentes</a>
-                <a href="0">Extras</a>
-                <a href="0">Confirmar Presença</a>
-            </nav>
+    <header class="cabecalho">
+        <div class="logo">
+            <a href="#inicio">
+                <img src="images/logo.png" alt="Logo" />
+            </a>
         </div>
-    </header>
-    <section class="sobre">
-        <div class="extras">
-            <img src="images/img1.png" alt="Folhas de eucalipto" width="400x" />
-        </div>
-        <div class="center">
-            <div class="texto-sobre">
-                <h1>22.07.22</h1>
-                <h2>Leonardo e Lais</h2>
-                <p><b>299</b> dias, 3 horas e 42 segundos</p>
-                <button>Confirmar Presença</button>
+        <button class="menu-toggle">
+            <i class="fa fa-lg fa-bars"></i>
+        </button>
+        <nav class="menu">
+            <ul>
+                <li>
+                    <a href="#inicio">Inicio</a>
+                </li>
+                <li>
+                    <a href="#historia">Nossa Historia</a>
+                </li>
+                <li>
+                    <a href="#padrinhos">Padrinhos</a>
+                </li>
+                <li>
+                    <a href="#local">Local</a>
+                </li>
+                <li>
+                    <a href="#presentes">Presentes</a>
+                </li>
+                <li>
+                    <a href="#extras">Extras</a>
+                </li>
+                <li>
+                    <a href="#confirmarprsenca">Confirmar Presença</a>
+                </li>
+            </ul>
+        </nav>
+        <section class="inico">
+            <div class="circle">
+                <img src="images/img1.png" alt="Folhas de eucalipto" width="400px" />
             </div>
-    </section>
+            <div class="center">
+                <div class="texto-inicio">
+                    <h1>22.07.22</h1>
+                    <h2>Leonardo e Lais</h2>
+                    <p><b>299</b> dias, 3 horas e 42 segundos</p>
+                    <button>Confirmar Presença</button>
+                </div>
+        </section>
+    </header>
 
+    <script>
+        window.onhashchange = function(e) {
+            const oldURL = e.oldURL.split('#')[1]
+            const newURL = e.newURL.split('#')[1]
+            const oldLink = document.querySelector(`.menu a[href="#${oldURL}"]`)
+            const newLink= document.querySelector(`.menu a[href="#${newURL}"]`)
+            oldLink && oldLink.classList.remove('select')
+            newLink && newLink.classList.add('select')
+        }
+    </script>
 </body>
 
 </html>
