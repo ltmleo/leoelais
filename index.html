@@ -7,17 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Leo e Lais</title>
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
-    <link rel="stylesheet" href="css/cabecalho.css" />
-    <link rel="stylesheet" href="css/home.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <style>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="script/scroll.js"></script>
 
-    </style>
 </head>
 
 <body>
     <header class="cabecalho">
+        <link rel="stylesheet" href="css/cabecalho.css" />
+        <script src="script/menu.js"></script>
         <div class="logo">
             <a href="#inicio">
                 <img src="images/logo.png" alt="Logo" />
@@ -47,34 +47,74 @@
                     <a href="#extras">Extras</a>
                 </li>
                 <li>
-                    <a href="#confirmarprsenca">Confirmar Presença</a>
+                    <a href="#confirmar">Confirmar Presença</a>
                 </li>
             </ul>
         </nav>
-        <section class="inico">
-            <div class="circle">
-                <img src="images/img1.png" alt="Folhas de eucalipto" width="400px" />
-            </div>
-            <div class="center">
-                <div class="texto-inicio">
-                    <h1>22.07.22</h1>
-                    <h2>Leonardo e Lais</h2>
-                    <p><b>299</b> dias, 3 horas e 42 segundos</p>
-                    <button>Confirmar Presença</button>
-                </div>
-        </section>
     </header>
 
-    <script>
-        window.onhashchange = function(e) {
-            const oldURL = e.oldURL.split('#')[1]
-            const newURL = e.newURL.split('#')[1]
-            const oldLink = document.querySelector(`.menu a[href="#${oldURL}"]`)
-            const newLink= document.querySelector(`.menu a[href="#${newURL}"]`)
-            oldLink && oldLink.classList.remove('select')
-            newLink && newLink.classList.add('select')
-        }
-    </script>
+    <!-- Inicio -->
+    <section class="inico" id="inicio">
+        <link rel="stylesheet" href="css/inicio.css" />
+        <div class="circle">
+            <img src="images/img1.png" alt="Folhas de eucalipto" width="400px" />
+        </div>
+        <div class="center">
+            <div class="texto-inicio">
+                <h1>22.07.22</h1>
+                <h2>Leonardo e Lais</h2>
+                <p><b>299</b> dias, 3 horas e 42 segundos</p>
+                <button>Confirmar Presença</button>
+            </div>
+    </section>
+
+    <!-- Nossa Historia -->
+    <section class="historia" id="historia">
+        <link rel="stylesheet" href="css/historia.css" />
+        <div class="historia">
+            <p> NOSSA HISTORIA </p>
+        </div>
+    </section>
+
+    <!-- Padrinhos -->
+    <section class="padrinhos" id="padrinhos">
+        <link rel="stylesheet" href="css/padrinhos.css" />
+        <div class="padrinhos">
+            <p> PADRINHOS </p>
+        </div>
+    </section>
+
+    <!-- Local -->
+    <section class="local" id="local">
+        <link rel="stylesheet" href="css/local.css" />
+        <div class="local">
+            <p> LOCAL </p>
+        </div>
+    </section>
+
+    <!-- Presentes -->
+    <section class="presentes" id="presentes">
+        <link rel="stylesheet" href="css/presentes.css" />
+        <div class="presentes">
+            <p> PRESENTES </p>
+        </div>
+    </section>
+
+    <!-- Extras -->
+    <section class="extras" id="extras">
+        <link rel="stylesheet" href="css/extras.css" />
+        <div class="extras">
+            <p> EXTRAS </p>
+        </div>
+    </section>
+
+    <!-- Confirmar -->
+    <section class="confirmar" id="confirmar">
+        <link rel="stylesheet" href="css/confirmar.css" />
+        <div class="confirmar">
+            <p> Confirmar </p>
+        </div>
+    </section>
 </body>
 
 </html>

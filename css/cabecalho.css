@@ -4,6 +4,12 @@
     border-bottom: solid 3px rgb(204, 204, 204);
     height: 70px;
     box-sizing: content-box;
+    position: fixed;
+    width: 100%;
+    top:0;
+    overflow: hidden;
+    background-color: rgba(211, 211, 211, 0.973) !important;
+    z-index: 1;
 }
 
 .logo {

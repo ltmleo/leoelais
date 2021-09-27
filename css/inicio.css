@@ -6,19 +6,10 @@
     margin: 0 auto;
 }
 
-section.inicio {
-    height: calc(100% - 200px);
-    position: relative;
-}
-
 .circle {
     position: absolute;
-    bottom: -800px;
-    right: -600px;
-    width: 1200px;
-    height: 1200px;
-    border-radius: 50%;
-    background-color: rgb(112 138 125);
+    bottom: 0px;
+    right: 0px;
 }
 
 @media(max-width: 980px) {
