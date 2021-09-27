@@ -19,6 +19,7 @@ section {
     padding: 60px;
     padding-left: 120px;
     box-sizing:border-box;
+    overflow-x: hidden;
 }
 
 
