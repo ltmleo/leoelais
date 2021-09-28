@@ -13,23 +13,3 @@ $(function () {
   });
 });
 
-var lastScrollTop = 0;
-$(document).scroll(function () {
-  var breakEach = false;
-  console.log($(this).scrollTop() > lastScrollTop)
-  var upDirection = $(this).scrollTop() > lastScrollTop;
-  lastScrollTop = $(this).scrollTop();
-
-  $('section').each(function () {
-    if (!breakEach && $(this).position().top < $(document).scrollTop() && ($(this).position().top + $(this).outerHeight()) > $(document).scrollTop()) {
-      let nextSection = $(this).next().attr('id');
-      console.log(upDirection)
-      if (!upDirection) {
-        nextSection = $(this).prev().attr('id');
-      }
-    console.log(nextSection)
-    location.href = "#" + nextSection;
-    breakEach = true;
-  }
-  });
-});
