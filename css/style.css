@@ -10,6 +10,14 @@ html, body {
     height:100%;
     width:100%;
     padding:0;
+    align-items: flex-start;
+}
+
+section {
+    display: block;
+    height:100%;
+    width:100%;
+    box-sizing: border-box;
 }
 
 .sections {
@@ -22,17 +30,9 @@ html, body {
         scroll-snap-type: y mandatory;
         overflow-y: scroll;
     }
-}
-
-section {
-    display: block;
-    height:100%;
-    width:100%;
-    padding: 60px;
-    padding-left: 120px;
-    box-sizing: border-box;
-    overflow-x: hidden;
-    scroll-snap-align: start;
+    section {
+        scroll-snap-align: start;
+    }
 }
 
 
