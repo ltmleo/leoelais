@@ -1,5 +1,70 @@
 #historia {
-    background-color: black;
-    color: white;
+    background-color: rgb(112 138 125);
+    color: black;
     font-size: 2vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1.2fr 1.5fr;
+    gap: 0px 0px;
+    grid-template-areas: "historia historia fotos" "familia-noivo familia-noiva fotos";
+    align-items: start;
+    align-self: start;
+    justify-self: start;
+}
+
+#familia-noiva {
+    grid-area: familia-noiva;
+}
+
+#familia-noivo {
+    grid-area: familia-noivo;
+}
+
+div.polaroid img {
+    width: 100px;
+    height: 95px;
+}
+
+div.polaroid {
+    width: 100px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 5px;
+}
+
+div.container-polaroid {
+    font-size: 10px;
+    text-align: center;
+    padding: 5px 0px;
+    margin: 0px;
+}
+
+.fotos-familia {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.historia-text {
+    grid-area: historia;
+    width: 100%;
+    height: 100%;
+}
+
+.fotos {
+    grid-area: fotos;
+    width: 100%;
+    height: 100%;
+}
+
+.familia-noivo {
+    grid-area: familia-noivo;
+    width: 100%;
+    height: 100%;
+}
+
+.familia-noiva {
+    grid-area: familia-noiva;
+    width: 100%;
+    height: 100%;
 }
