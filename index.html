@@ -41,7 +41,7 @@
                 <h1>22.07.22</h1>
                 <h2>Leonardo e Lais</h2>
                 <div id="countdown"></div>
-                
+
                 <button onclick="location.href='#confirmar'" type="button">Confirmar Presença</button>
             </div>
             <div class="imagem">
@@ -53,8 +53,20 @@
         <!-- Nossa Historia -->
         <section class="historia" id="historia">
             <link rel="stylesheet" href="css/historia.css" />
+            <script src="script/slideshow.js"></script>
             <div class="historia-text">
-                <p> NOSSA HISTORIA </p>
+                <h1> NOSSA HISTORIA </h1>
+                <p>
+                    Nos conhecemos durante o ensino médio em 2012.
+                    Ficamos muito amigos, até que um dia resolvemos ser um pouco mais.
+                    Começamos a Namorar um tempo depois e foi só amor e parceria.
+                    Fizemos faculdade fora, Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                    dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                    sunt in culpa qui officia deserunt mollit anim id est laborum."
+                </p>
             </div>
 
             <div class="fotos-familia" id="familia-noivo">
@@ -99,7 +111,40 @@
                 </div>
             </div>
             <div class="fotos">
-                FOTOS
+                <!-- Slideshow container -->
+                <div class="slideshow-container">
+
+                    <!-- Full-width images with number and caption text -->
+                    <div class="mySlides fade">
+                        <div class="numbertext">1 / 3</div>
+                        <img src="images/historia/0.jpg" style="width:100%">
+                        <div class="text">Leo e Lais 2012</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">1 / 3</div>
+                        <img src="images/historia/1.jpg" style="width:100%">
+                        <div class="text">Leo e Lais 2017</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">1 / 3</div>
+                        <img src="images/historia/2.jpg" style="width:100%">
+                        <div class="text">Leo e Lais 2017</div>
+                    </div>
+
+                    <!-- Next and previous buttons -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br>
+
+                <!-- The dots/circles -->
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
             </div>
 
         </section>
@@ -145,5 +190,9 @@
         </section>
     </div>
 </body>
+<script type="text/javascript">
+    var slideIndex = 1;
+    showSlides(slideIndex);    
+</script>
 
 </html>
