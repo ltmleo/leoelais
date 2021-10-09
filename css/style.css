@@ -35,14 +35,3 @@ section {
     overflow-y: scroll;
 }
 
-@media screen and (max-width: 600px) {
-    .sections {
-        scroll-snap-type: y mandatory;
-        overflow-y: scroll;
-    }
-    section {
-        scroll-snap-align: start;
-    }
-}
-
-
