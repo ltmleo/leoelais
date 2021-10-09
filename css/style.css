@@ -5,6 +5,12 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+}
+
+
 html, body {
     margin: 0;
     height:100%;
@@ -19,11 +25,14 @@ section {
     height:100%;
     width:100%;
     box-sizing: border-box;
+    scroll-snap-align: start;
 }
 
 .sections {
     height:100%;
     width:100%;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
 }
 
 @media screen and (max-width: 600px) {
