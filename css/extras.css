@@ -1,4 +1,44 @@
 #extras {
-    background-color: green;
-    font-size: 20vw;
+    padding-top: 50px;
+    text-align: center;
+    overflow-y: scroll;
+}
+#extras-content {
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+#extras h1 {
+    font-size: 50px;
+    padding-bottom: 20px;
+}
+
+#extras-fotos {
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    overflow: scroll;
+}
+
+#spotify {
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    overflow: scroll;
+}
+
+#spotify h2 {
+    font-size: 25x;
+}
+#spotify p {
+    padding-bottom: 20px;
+    font-size: 15px;
+}
+
+@media screen and (max-width: 600px) {
+    #extras-content {
+        display: block;
+        padding-left: 22%;
+    }
 }

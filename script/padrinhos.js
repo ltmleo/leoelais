@@ -111,7 +111,6 @@ function getPadrinhoPolaroid(padrinho) {
 function showPadrinhos() {
     var padrinhoHTML = ""
     for (var i in padrinhos) {
-        console.log(padrinhos[i])
         padrinhoHTML += getPadrinhoPolaroid(padrinhos[i])
     }
     document.getElementById("padrinhos-fotos").innerHTML = padrinhoHTML
