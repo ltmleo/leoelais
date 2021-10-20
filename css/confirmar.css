@@ -1,40 +1,124 @@
 #confirmar {
-    padding-top: 50px;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
     text-align: center;
-    overflow-y: scroll;
+    height: 100vh;
+    padding-top: 50px;
 }
 
-#confirmar input[type=text], select {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+#confirmar form {
+    background-color: rgb(112, 138, 125);
+    border-radius: 20px;
     box-sizing: border-box;
-}
-
-#confirmar input[type=submit] {
-    width: 100%;
-    background-color: #4CAF50;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-#confirmar input[type=submit]:hover {
-    background-color: #45a049;
-}
-
-#confirmar div {
-    border-radius: 5px;
-    background-color: #f2f2f2;
+    height: 600px;
     padding: 20px;
+    width: 600px;
 }
 
-#confirmar input[type="radio"], input[type="checkbox"] {
-    display: inline;
+#confirmar .title {
+    color: #eee;
+    font-family: sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+#confirmar .subtitle {
+    color: #eee;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 0px;
+}
+
+#confirmar .input-container {
+    height: 50px;
+    position: relative;
+    width: 100%;
+}
+
+#confirmar .ic1 {
+    margin-top: 22px;
+}
+
+#confirmar .ic2 {
+    margin-top: 20px;
+}
+
+#confirmar .input {
+    background-color: rgb(79, 97, 88);
+    border-radius: 12px;
+    border: 0;
+    box-sizing: border-box;
+    color: #eee;
+    font-size: 18px;
+    height: 100%;
+    outline: 0;
+    padding: 4px 20px 0;
+    width: 100%;
+}
+
+#confirmar .cut {
+    background-color: rgb(112, 138, 125);
+    border-radius: 10px;
+    height: 20px;
+    left: 20px;
+    position: absolute;
+    top: -20px;
+    transform: translateY(0);
+    transition: transform 200ms;
+    width: 76px;
+}
+
+#confirmar .cut-short {
+    width: 50px;
+}
+
+#confirmar .input:focus~.cut, .input:not(:placeholder-shown)~.cut {
+    transform: translateY(8px);
+}
+
+#confirmar .placeholder {
+    color: #c0c0c0;
+    font-family: sans-serif;
+    left: 20px;
+    line-height: 14px;
+    pointer-events: none;
+    position: absolute;
+    transform-origin: 0 50%;
+    transition: transform 200ms, color 200ms;
+    top: 20px;
+}
+
+#confirmar .input:focus~.placeholder, #confirmar .input:not(:placeholder-shown)~.placeholder {
+    transform: translateY(-30px) translateX(10px) scale(0.75);
+}
+
+#confirmar .input:not(:placeholder-shown)~.placeholder {
+    color: rgb(67, 80, 74);
+}
+
+#confirmar .input:focus~.placeholder {
+    color: rgb(43, 43, 43);
+}
+
+#confirmar .submit {
+    background-color: rgb(67, 80, 74);
+    border-radius: 12px;
+    border: 0;
+    box-sizing: border-box;
+    color: #eee;
+    cursor: pointer;
+    font-size: 18px;
+    height: 50px;
+    margin-top: 15px; 
+    outline: 0;
+    text-align: center;
+    width: 100%;
+}
+
+#confirmar .submit:active {
+    background-color: rgb(44, 53, 49);;
 }

@@ -35,7 +35,7 @@
 /* Change the color of links on hover */
 
 .menu a:hover {
-    background-color: rgb(112 138 125);
+    background-color: rgb(112, 138, 125);
     border-radius: 10px;
     color: black;
 }
@@ -43,7 +43,7 @@
 /* Add an active class to highlight the current page */
 
 .menu a.active {
-    background-color: rgb(112 138 125);
+    background-color: rgb(112, 138, 125);
     border-radius: 10px;
     color: black;
 }
