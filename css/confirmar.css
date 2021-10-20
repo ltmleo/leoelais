@@ -67,13 +67,15 @@
     left: 20px;
     position: absolute;
     top: -20px;
-    transform: translateY(0);
     transition: transform 200ms;
     width: 76px;
 }
 
 #confirmar .cut-short {
     width: 50px;
+}
+#confirmar .cut-big {
+    width: 110px;
 }
 
 #confirmar .input:focus~.cut, .input:not(:placeholder-shown)~.cut {
@@ -101,7 +103,7 @@
 }
 
 #confirmar .input:focus~.placeholder {
-    color: rgb(43, 43, 43);
+    color: black;
 }
 
 #confirmar .submit {
@@ -122,3 +124,7 @@
 #confirmar .submit:active {
     background-color: rgb(44, 53, 49);;
 }
+
+textarea[name=acompanhantes] {
+    resize: none;
+  }
