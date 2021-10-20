@@ -213,10 +213,12 @@
             <div id="extras-content">
                 <div id="extras-fotos">
                     <h2>Envie fotos com o casal</h2>
-                    <form target="_blank" action="http://jkorpela.fi/cgi-bin/echo.cgi" enctype="multipart/form-data"
-                        method="post">
-                        <input type="file" name="arquivos" class="btn btn-success" accept="image/*" multiple />
-                        <input type="submit" value="Enviar" class="btn btn-success" />
+                    <form action="https://formspree.io/f/mwkajbdw" method="POST" enctype="multipart/form-data">
+                        <label>
+                            Fotos:
+                            <input type="file" name="upload" accept="image/*" multiple>
+                        </label>
+                        <button type="submit">Send</button>
                     </form>
                     <div class="extras-fotos">
                         <!-- Slideshow container -->
@@ -263,7 +265,44 @@
         <!-- Confirmar -->
         <section class="confirmar" id="confirmar">
             <link rel="stylesheet" href="css/confirmar.css" />
-            <p> Confirmar </p>
+            <h1> Confirmar </h1>
+            <div>
+                <form action="https://formspree.io/f/mwkajbdw" method="POST">
+                    <label>Nome</label>
+                    <input type="text" name="name" placeholder="Nome do convidado">
+                    <label>
+                        Você irá ao evento?
+                    </label>
+                        <input type="radio" name="confirmacao" value="sim"> SIM
+                        <input type="radio" name="confirmacao" value="nao"> NÃO
+                    <label>
+                        Quantidade de Adultos:
+                    </label>
+                        <select name="adultos">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    <label>
+                        Quantidade de Crianças:
+                    </label>
+                        <select name="criancas">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    <textarea type="text" name="acompanhantes" placeholder="Nome dos acompanhantes"></textarea>
+                    <input type="text" name="email" placeholder="Email">
+                    <input type="text" name="tel" placeholder="Telefone (com DDD)">
+                    <textarea type="text" name="msg" placeholder="Deixe uma mensagem"></textarea>
+                    <input type="submit" value="Enviar">
+                </form>
+            </div>
         </section>
     </div>
 </body>
