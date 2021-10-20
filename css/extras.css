@@ -2,9 +2,11 @@
     padding-top: 50px;
     text-align: center;
     overflow-y: scroll;
+    background: rgb(134,141,118);
+    background: linear-gradient(180deg, rgba(80,91,59,1) 0%, rgba(25,25,16,1) 86%);
+    color: rgb(242,243,241);
 }
 #extras-content {
-    background-color: white;
     width: 100%;
     height: 100%;
     display: flex;
@@ -12,6 +14,9 @@
 #extras h1 {
     font-size: 50px;
     padding-bottom: 20px;
+}
+#extras form {
+    padding: 10px;
 }
 
 #extras-fotos {
@@ -35,10 +40,24 @@
     padding-bottom: 20px;
     font-size: 15px;
 }
+#spotify iframe {
+    width: 100%;
+    height: 100%;
+}
 
 @media screen and (max-width: 600px) {
+    #extras h1 {
+        padding: 0px;
+    }
     #extras-content {
         display: block;
-        padding-left: 22%;
+    }
+    #extras-fotos {
+        width: 100%;
+        height: 100%;
+    }
+    #spotify {
+        width: 100%;
+        height: 100%;
     }
 }
